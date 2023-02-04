@@ -253,7 +253,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 28-Jan-2023 at 18:22:30 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 04-Feb-2023 at 19:38:12 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -284,8 +284,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Tester</td>
         <td>Ganesh</td></tr></table>
     <h2>Summary</h2>
-    <p>17 tests ran in 84.93 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">15 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>17 tests ran in 97.27 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">17 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -296,171 +296,189 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_order_confirmation_message</td>
-          <td class="col-duration">0.28</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;Tests.test_CheckoutPage.Test_CheckoutPage object at 0x00000167E0B29E10&gt;<br/><br/>    @pytest.mark.sanity<br/>    def test_order_confirmation_message(self):<br/>        checkout = CheckoutPage(self.driver)<br/>        msg = checkout.get_order_confirmation()<br/>        print(msg)<br/>&gt;       assert msg == TestData.CONFIRM_MSG<br/><span class="error">E       AssertionError: assert None == &#x27;THANK YOU FOR YOUR ORDER&#x27;</span><br/><span class="error">E         +None</span><br/><span class="error">E         -&#x27;THANK YOU FOR YOUR ORDER&#x27;</span><br/><br/>Tests\test_CheckoutPage.py:56: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>None
-<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">Tests/test_HomePage.py::Test_HomePage::test_headerline_value</td>
-          <td class="col-duration">0.34</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;Tests.test_HomePage.Test_HomePage object at 0x00000167E0B3B5D0&gt;<br/><br/>    @pytest.mark.sanity<br/>    def test_headerline_value(self):<br/>        homePage = HomePage(self.driver)<br/>        header = homePage.get_headerline_value()<br/>        if header == TestData.HEADER:<br/>            assert True<br/>        else:<br/>            self.driver.save_screenshot(TestData.SCREENSHOT_PATH +&quot;\\test_headerline_value.png&quot;)<br/>            self.logger.warning(&quot; ***** Test Case failed as Header is not matching *****&quot;)<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>Tests\test_HomePage.py:33: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>WARNING  root:test_HomePage.py:32  ***** Test Case failed as Header is not matching *****<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_cart_items</td>
-          <td class="col-duration">8.22</td>
+          <td class="col-duration">2.77</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_CheckoutPage.py:18 ***** Checkout Page Test Cases started *****<br/></div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_CheckoutPage.py:18 ***** Checkout Page Test Cases started *****
+INFO     root:test_CheckoutPage.py:20 Verify Cart items button TC started...
+INFO     root:test_CheckoutPage.py:29 Verified Cart items button : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_checkout_button</td>
-          <td class="col-duration">0.10</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_shipping_information</td>
-          <td class="col-duration">0.47</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_total_cart_item_value</td>
           <td class="col-duration">0.05</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_CheckoutPage.py:34 Verify Checkout button TC started...
+INFO     root:test_CheckoutPage.py:38 Verified Checkout button :TC Passed<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_shipping_information</td>
+          <td class="col-duration">0.33</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_CheckoutPage.py:42 Verify Shipping Information Details TC started...
+INFO     root:test_CheckoutPage.py:46 Verified Shipping Information Details : TC Passed<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_total_cart_item_value</td>
+          <td class="col-duration">0.03</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Total items in cart:  None
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_CheckoutPage.py:50 Verify total cart item count TC started...
+INFO     root:test_CheckoutPage.py:54 Verified total items in cart : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_finish_button</td>
-          <td class="col-duration">0.07</td>
+          <td class="col-duration">0.04</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_CheckoutPage.py:58 Verify Finish button TC started...
+INFO     root:test_CheckoutPage.py:61 Verified Finish button : TC Passed<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_CheckoutPage.py::Test_CheckoutPage::test_order_confirmation_message</td>
+          <td class="col-duration">0.12</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_CheckoutPage.py:65 Verify Order Confirmation message TC started...
+INFO     root:test_CheckoutPage.py:69 THANK YOU FOR YOUR ORDER
+INFO     root:test_CheckoutPage.py:70 Verified Order Confirmation message : TC Passed
+INFO     root:test_CheckoutPage.py:72 ***** Checkout Page Test Cases ended *****<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_HomePage.py::Test_HomePage::test_homepage_title</td>
-          <td class="col-duration">4.52</td>
+          <td class="col-duration">2.51</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:17 ************* Homepage Test Case started **********
-INFO     root:test_HomePage.py:22 ************* Homepage Title Case Passed **********<br/></div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:15 ***** Homepage Test Cases started *****
+INFO     root:test_HomePage.py:17 Verify Home Page title TC started...
+INFO     root:test_HomePage.py:22 Verified Homepage Title : TC Passed<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_HomePage.py::Test_HomePage::test_headerline_value</td>
+          <td class="col-duration">0.04</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:26 Verify Homepage Header TC started...
+INFO     root:test_HomePage.py:31 Verified Homepage Header : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_HomePage.py::Test_HomePage::test_sort_button</td>
-          <td class="col-duration">0.16</td>
+          <td class="col-duration">0.07</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:39 Verify Sort Button TC started...
+INFO     root:test_HomePage.py:42 Verified Sort Button : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_HomePage.py::Test_HomePage::test_get_item_and_add</td>
-          <td class="col-duration">0.09</td>
+          <td class="col-duration">0.18</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:43 ***** Search &amp; Add Items to cart Test Case started *****
-INFO     root:test_HomePage.py:49 ***** Test Case Passed *****<br/></div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:47 Search &amp; Add items to Cart TC started...
+INFO     root:test_HomePage.py:52 Verified search &amp; add items to Cart functionality : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_HomePage.py::Test_HomePage::test_add_items_to_cart</td>
-          <td class="col-duration">0.08</td>
+          <td class="col-duration">0.05</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:57 Verify add items to Cart TC started...
+INFO     root:test_HomePage.py:60 Verified add items to Cart : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_HomePage.py::Test_HomePage::test_get_back_to_products</td>
-          <td class="col-duration">0.10</td>
+          <td class="col-duration">0.05</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:64 Verify Get back to products button TC started... 
+INFO     root:test_HomePage.py:67 Verified Get back to products button : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_HomePage.py::Test_HomePage::test_get_shopping_cart_button</td>
-          <td class="col-duration">0.36</td>
+          <td class="col-duration">16.28</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_HomePage.py:71 Verify Cart Button TC started...
+INFO     root:test_HomePage.py:74 Verified Cart Button : TC Passed
+INFO     root:test_HomePage.py:76 ***** Homepage Test Cases ended *****<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_LoginPage.py::Test_Login::test_loginPage_tile</td>
-          <td class="col-duration">4.11</td>
+          <td class="col-duration">2.29</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_LoginPage.py:17 ***** Verifying Login Page Title *****
-INFO     root:test_LoginPage.py:21 ***** Test Case passed *****<br/></div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_LoginPage.py:17 ***** Login Page Test Cases started *****
+INFO     root:test_LoginPage.py:19 Verify Login Page Title TC started...
+INFO     root:test_LoginPage.py:23 Login Page Title Verified : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_LoginPage.py::Test_Login::test_loginButton</td>
-          <td class="col-duration">0.15</td>
+          <td class="col-duration">0.12</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_LoginPage.py:27 Verify Login Button TC started...
+INFO     root:test_LoginPage.py:31 Login Page Button Verified : TC Passed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_LoginPage.py::Test_Login::test_login</td>
-          <td class="col-duration">0.81</td>
+          <td class="col-duration">16.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_LoginPage.py:36 ***** Login Page Test Cases Ended *****<br/></div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_LoginPage.py:38 Verify User Login TC started...
+INFO     root:test_LoginPage.py:41 User Logged in successfully : TC PASSED
+INFO     root:test_LoginPage.py:43 ***** Login Page Test Cases Ended *****<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_LoginPage_DDT.py::Test_Login::test_login_ddt</td>
-          <td class="col-duration">60.27</td>
+          <td class="col-duration">54.81</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>number of rows in excel:  5
-[&#x27;Pass&#x27;, &#x27;Pass&#x27;]
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>[&#x27;Pass&#x27;, &#x27;Pass&#x27;]
 [&#x27;Pass&#x27;, &#x27;Pass&#x27;, &#x27;Pass&#x27;]
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_LoginPage_DDT.py:21 ******* Starting Test_002_DDT_Login Test **********
-INFO     root:test_LoginPage_DDT.py:22 ******* Starting Login DDT Test **********
-INFO     root:test_LoginPage_DDT.py:47 **** passed ****
-INFO     root:test_LoginPage_DDT.py:62 **** passed ****
-INFO     root:test_LoginPage_DDT.py:62 **** passed ****
-INFO     root:test_LoginPage_DDT.py:47 **** passed ****
-INFO     root:test_LoginPage_DDT.py:68 ******* DDT Login test passed **********
-INFO     root:test_LoginPage_DDT.py:75 ******* End of Login DDT Test **********
-INFO     root:test_LoginPage_DDT.py:76 **************** Completed  TC_LoginDDT_002 *************<br/></div></td></tr></tbody></table></body></html>
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_LoginPage_DDT.py:19 ***** Starting Data Driven Test Case *****
+INFO     root:test_LoginPage_DDT.py:21 Verify Login Page DDT TC started...
+INFO     root:test_LoginPage_DDT.py:45 passed
+INFO     root:test_LoginPage_DDT.py:60 passed
+INFO     root:test_LoginPage_DDT.py:60 passed
+INFO     root:test_LoginPage_DDT.py:45 passed
+INFO     root:test_LoginPage_DDT.py:66 Verified Login DDT successfully : TC Passed
+INFO     root:test_LoginPage_DDT.py:73 ***** Data Driver Test Cases Completed *****<br/></div></td></tr></tbody></table></body></html>

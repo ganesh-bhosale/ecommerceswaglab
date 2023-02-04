@@ -10,7 +10,7 @@ class TestData:
     PASSWORD = "secret_sauce"
     LOGIN_PAGE_TITLE = "Swag Labs"
     HOME_PAGE_TITLE = "Swag Labs"
-    HEADER = "Products"
+    HEADER = "PRODUCTS"
     ITEM_NAME = "Sauce Labs Fleece Jacket"
 
     FIRST_NAME = "Ganesh345"
@@ -22,5 +22,5 @@ class TestData:
     LOGIN_DDT_URL = "https://practicetestautomation.com/practice-test-login/"
     LOGIN_DDT_TITLE = "Logged In Successfully | Practice Test Automation"
     LOGGED_IN_URL = "https://practicetestautomation.com/logged-in-successfully/"
-    LOGINDATA_FILENAME = "C:\\Users\g.dnyandeo.bhosale\PycharmProjects\E_Commerce_SwagLabs\TestData\LoginData.xlsx"
+    LOGINDATA_FILENAME = "C:\\Users\g.dnyandeo.bhosale\PycharmProjects\E_Commerce_SwagLabs\TestData\LoginDataDDT.xlsx"
     LOGINDATA_SHEETNAME = "LoginData"

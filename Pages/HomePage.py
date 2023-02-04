@@ -24,8 +24,7 @@ class HomePage(BasePage):
         return self.get_title(title)
 
     def get_headerline_value(self):
-        if self.is_visible(self.HEADER_LINE):
-            return self.get_element_text(self.HEADER_LINE)
+        return self.get_element_text(self.HEADER_LINE)
 
     def is_sort_button_exist(self):
         if self.is_visible(self.SORT_BUTTON):

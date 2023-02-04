@@ -43,4 +43,4 @@ class CheckoutPage(BasePage):
         self.do_click(self.FINISH_BUTTON)
 
     def get_order_confirmation(self):
-        self.get_element_text(self.ORDER_CONFIRM_TEXT)
+        return self.get_element_text(self.ORDER_CONFIRM_TEXT)

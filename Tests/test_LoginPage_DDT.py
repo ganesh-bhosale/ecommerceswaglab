@@ -1,7 +1,5 @@
 import time
 import pytest
-from selenium import webdriver
-
 from Config.config import TestData
 from Pages.LoginPageDDT import LoginPageDDT
 from Tests.test_Base import BaseTest
@@ -18,12 +16,12 @@ class Test_Login(BaseTest):
     @pytest.mark.regression
     def test_login_ddt(self):
 
-        self.logger.info("******* Starting Test_002_DDT_Login Test **********")
-        self.logger.info("******* Starting Login DDT Test **********")
+        self.logger.info("***** Starting Data Driven Test Case *****")
+
+        self.logger.info("Verify Login Page DDT TC started...")
         self.loginPageDDT = LoginPageDDT(self.driver)
 
         self.rows = XLUtils.getRowCount(self.file, self.sheetName)
-        print("number of rows in excel: ", self.rows)
         status_lst = []
 
         for r in range(2, self.rows+1):
@@ -44,36 +42,35 @@ class Test_Login(BaseTest):
 
             if act_title == exp_title :
                 if self.expected == 'pass':
-                    self.logger.info("**** passed ****")
+                    self.logger.info("passed")
                     self.loginPageDDT.do_logout()
                     status_lst.append("Pass")
 
                 elif self.expected == 'fail':
-                    self.logger.info("**** failed ****")
+                    self.logger.info("failed")
                     self.loginPageDDT.do_logout()
                     status_lst.append("Fail")
 
             elif act_title != exp_title :
                 if self.expected == 'pass':
-                    self.logger.info("**** failed ****")
+                    self.logger.info("failed")
                     status_lst.append("Fail")
 
                 elif self.expected == 'fail':
-                    self.logger.info("**** passed ****")
+                    self.logger.info("passed")
                     status_lst.append("Pass")
 
                 print(status_lst)
 
         if "Fail" not in status_lst:
-            self.logger.info("******* DDT Login test passed **********")
+            self.logger.info("Verified Login DDT successfully : TC Passed")
             assert True
 
         else:
-            self.logger.error("******* DDT Login test failed **********")
+            self.logger.error("Login DDT Failed : TC Failed")
             assert False
 
-        self.logger.info("******* End of Login DDT Test **********")
-        self.logger.info("**************** Completed  TC_LoginDDT_002 ************* ")
+        self.logger.info("***** Data Driver Test Cases Completed *****")
 
 
 
